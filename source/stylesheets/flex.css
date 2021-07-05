@@ -19,7 +19,7 @@
     animation: carousel_list 40s ease-out infinite;
     overflow: hidden;
     height: 100px;
-    width: 100vw;
+    width: 400vw;
 }
 
 .line_background {
