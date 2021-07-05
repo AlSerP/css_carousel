@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+.flex_test {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    align-items: unsafe center;
+    color: white;
+/*    font-family: 'Roboto Slab', serif;*/
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+}
+
+.headers_carousel {
+    position: absolute;
+    top: calc(100vh - 130px);
+    animation: carousel_list 40s ease-out infinite;
+}
+
+.line_background {
+    height: 26px;
+}
+
+hr {
+    width: 200px;
+    height: 0;
+    border-color: #fff;
+    border-radius: 1px;
+    animation: line_appearance 10s linear infinite;
+}
+
+span {
+    text-align: center;
+    width: 500px;
+    animation: text_appearance 10s linear infinite;
+}
+
+@keyframes carousel_list {
+
+    0%,
+    21.25% {
+        margin-left: 0;
+    }
+
+    25%,
+    46.25% {
+        margin-left: -100vw;
+    }
+
+    50%,
+    71.25% {
+        margin-left: -200vw;
+    }
+
+    75%,
+    96.25% {
+        margin-left: -300vw;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+@keyframes line_appearance {
+
+    0%,
+    20% {
+        opacity: 0;
+        width: 100px;
+    }
+
+    30% {
+        width: 200px;
+    }
+
+    35%,
+    55% {
+        opacity: 1;
+        width: 200px;
+    }
+
+    65%,
+    100% {
+        opacity: 0;
+        width: 100px;
+    }
+}
+
+@keyframes text_appearance {
+
+    0%,
+    20% {
+        opacity: 0;
+    }
+
+    35%,
+    55% {
+        opacity: 1;
+    }
+
+    65%,
+    100% {
+        opacity: 0;
+    }
+}

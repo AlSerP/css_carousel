@@ -1,0 +1,92 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.image {
+    padding: 0;
+    background: no-repeat center center fixed;
+    background-size: cover;
+    display: inline-block;
+}
+
+.full_image {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    animation: border_append 10s ease-in-out infinite;
+    animation-fill-mode: forwards;
+}
+
+.border_image {
+    margin: 50px;
+    margin-top: 60px;
+        margin-bottom: 140px;
+    width: calc(100vw - 100px);
+    height: calc(100vh - 200px);
+}
+
+.carousel {
+    margin: 0;
+    padding: 0;
+    width: 401vw;
+    height: 100vh;
+    font-size: 0;
+    animation: carousel_list 40s ease-out infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes border_append {
+    0%,
+    15% {
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    25%,
+    65% {
+        margin: 50px;
+        margin-top: 60px;
+        margin-bottom: 140px;
+        width: calc(100vw - 100px);
+        height: calc(100vh - 200px);
+    }
+
+    75%,
+    100% {
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+
+@keyframes carousel_list {
+    0%,
+    21.25% {
+        margin-left: 0;
+    }
+
+    25%,
+    46.25% {
+        margin-left: -100vw;
+    }
+
+    50%,
+    71.25% {
+        margin-left: -200vw;
+    }
+
+    75%,
+    96.25% {
+        margin-left: -300vw;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
