@@ -17,9 +17,6 @@
     position: absolute;
     top: calc(100vh - 130px);
     animation: carousel_list 40s ease-out infinite;
-    overflow: hidden;
-    height: 100px;
-    width: 400vw;
 }
 
 .line_background {
